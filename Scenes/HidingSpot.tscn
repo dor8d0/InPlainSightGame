@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqfjuwly4kh6h"]
+
+[ext_resource type="Script" path="res://Scripts/HidingSpot.cs" id="1_5johr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_01tlb"]
+size = Vector2(53, 59)
+
+[node name="HidingSpot" type="Area2D"]
+script = ExtResource("1_5johr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3.5, 0.5)
+shape = SubResource("RectangleShape2D_01tlb")
+
+[node name="Idle" type="AnimatedSprite2D" parent="."]
+
+[node name="AwaitingHide" type="AnimatedSprite2D" parent="."]
+
+[node name="Hiding" type="AnimatedSprite2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

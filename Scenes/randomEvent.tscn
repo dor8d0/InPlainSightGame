@@ -5,8 +5,12 @@
 [node name="RandomEvent" type="Node2D"]
 script = ExtResource("1_6l7bf")
 
-[node name="Timer" type="Timer" parent="."]
+[node name="QTE_Timer" type="Timer" parent="."]
 process_callback = 0
-autostart = true
+one_shot = true
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[node name="CooldownTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="QTE_Timer" to="." method="_on_QTEtimer_timeout"]
+[connection signal="timeout" from="CooldownTimer" to="." method="_on_cooldown_timer_timeout"]

@@ -5,6 +5,7 @@ public partial class Player : CharacterBody2D
 {
 	public const float Speed = 300.0f;
 	public const float JumpVelocity = -400.0f;
+	public bool isHiding = false;
 
 	public override void _PhysicsProcess(double delta)
 	{
@@ -16,7 +17,7 @@ public partial class Player : CharacterBody2D
 			velocity += GetGravity() * (float)delta;
 		}
 
-		// Handle Jump.
+		if(!isHiding){
 		if (Input.IsActionJustPressed("ui_accept") && IsOnFloor())
 		{
 			velocity.Y = JumpVelocity;
@@ -36,5 +37,6 @@ public partial class Player : CharacterBody2D
 
 		Velocity = velocity;
 		MoveAndSlide();
+		}
 	}
 }
