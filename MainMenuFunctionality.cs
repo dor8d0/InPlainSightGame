@@ -19,7 +19,7 @@ public partial class MainMenu : Control
 		}
 	}
 	//Creates the functionality of the start button when pressed
-	public void OnStartPressed(){
+	public void OnPlayPressed(){
 		GD.Print("Play Button Pressed");
 		
 		Visible = false;
