@@ -4,18 +4,24 @@ using System;
 public partial class HidingSpot : Area2D
 {
 	public bool playerCanHide = false;
+	public Player player;
 	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		player = GetParent().GetNode<Player>("Player");
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
 		if(Input.IsActionJustPressed("Hide") && playerCanHide){
-			Player player = GetTree().Root.GetNode<Player>("Player");
-			player.isHiding = true;
+			if(!player.isHiding){
+				player.isHiding = true;
+			}
+			else{
+				player.isHiding = false;
+			}
 		}
 	}
 	
