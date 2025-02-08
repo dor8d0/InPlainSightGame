@@ -15,7 +15,7 @@ public partial class DetectPlayer : Area2D
 	
 	public void _on_body_entered(Node2D body){
 		if (body is Player){
-			//lose the level here
+			GD.Print("player touched");
 		}
 	}
 }
