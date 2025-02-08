@@ -16,19 +16,19 @@ public partial class DetectPlayer : Area2D
 	public override void _Process(double delta)
 	{
 		if (touchingPlayer && !player.isHiding){
-			GD.Print("player spotted");
+			//GD.Print("player spotted");
 		}
 	}
 	
 	public void _on_body_entered(Node2D body){
 		if (body is Player){
-			GD.Print("touching player");
+			//GD.Print("touching player");
 			touchingPlayer = true;
 		}
 	}
 	public void _on_body_exited(Node2D body){
 		if (body is Player){
-			GD.Print("no longer touching player");
+			//GD.Print("no longer touching player");
 			touchingPlayer = false;
 		}
 	}

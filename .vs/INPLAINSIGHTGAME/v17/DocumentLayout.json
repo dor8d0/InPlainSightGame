@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Cleveland\\Desktop\\Chillenium\\InPlainSightGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cleveland\\Desktop\\Chillenium\\InPlainSightGame\\Scripts\\GlobalEnemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\GlobalEnemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03AC5F18-FAF6-4928-9F33-4EC137ABD131}|InPlainSightGame.csproj|c:\\users\\cleveland\\desktop\\chillenium\\inplainsightgame\\scripts\\randomevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03AC5F18-FAF6-4928-9F33-4EC137ABD131}|InPlainSightGame.csproj|solutionrelative:scripts\\randomevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03AC5F18-FAF6-4928-9F33-4EC137ABD131}|InPlainSightGame.csproj|c:\\users\\cleveland\\desktop\\chillenium\\inplainsightgame\\scripts\\globalenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03AC5F18-FAF6-4928-9F33-4EC137ABD131}|InPlainSightGame.csproj|solutionrelative:scripts\\globalenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03AC5F18-FAF6-4928-9F33-4EC137ABD131}|InPlainSightGame.csproj|c:\\users\\cleveland\\desktop\\chillenium\\inplainsightgame\\scripts\\detectplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03AC5F18-FAF6-4928-9F33-4EC137ABD131}|InPlainSightGame.csproj|solutionrelative:scripts\\detectplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03AC5F18-FAF6-4928-9F33-4EC137ABD131}|InPlainSightGame.csproj|c:\\users\\cleveland\\desktop\\chillenium\\inplainsightgame\\scripts\\gbevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03AC5F18-FAF6-4928-9F33-4EC137ABD131}|InPlainSightGame.csproj|solutionrelative:scripts\\gbevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03AC5F18-FAF6-4928-9F33-4EC137ABD131}|InPlainSightGame.csproj|c:\\users\\cleveland\\desktop\\chillenium\\inplainsightgame\\scripts\\randomevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03AC5F18-FAF6-4928-9F33-4EC137ABD131}|InPlainSightGame.csproj|solutionrelative:scripts\\randomevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "DetectPlayer.cs",
+              "DocumentMoniker": "C:\\Users\\Cleveland\\Desktop\\Chillenium\\InPlainSightGame\\Scripts\\DetectPlayer.cs",
+              "RelativeDocumentMoniker": "Scripts\\DetectPlayer.cs",
+              "ToolTip": "C:\\Users\\Cleveland\\Desktop\\Chillenium\\InPlainSightGame\\Scripts\\DetectPlayer.cs",
+              "RelativeToolTip": "Scripts\\DetectPlayer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T19:57:40.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "GlobalEnemy.cs",
               "DocumentMoniker": "C:\\Users\\Cleveland\\Desktop\\Chillenium\\InPlainSightGame\\Scripts\\GlobalEnemy.cs",
               "RelativeDocumentMoniker": "Scripts\\GlobalEnemy.cs",
               "ToolTip": "C:\\Users\\Cleveland\\Desktop\\Chillenium\\InPlainSightGame\\Scripts\\GlobalEnemy.cs",
               "RelativeToolTip": "Scripts\\GlobalEnemy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-08T19:20:27.967Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "GbEvents.cs",
               "DocumentMoniker": "C:\\Users\\Cleveland\\Desktop\\Chillenium\\InPlainSightGame\\Scripts\\GbEvents.cs",
               "RelativeDocumentMoniker": "Scripts\\GbEvents.cs",
               "ToolTip": "C:\\Users\\Cleveland\\Desktop\\Chillenium\\InPlainSightGame\\Scripts\\GbEvents.cs",
               "RelativeToolTip": "Scripts\\GbEvents.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-08T17:37:10.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "RandomEvent.cs",
               "DocumentMoniker": "C:\\Users\\Cleveland\\Desktop\\Chillenium\\InPlainSightGame\\Scripts\\RandomEvent.cs",
               "RelativeDocumentMoniker": "Scripts\\RandomEvent.cs",
               "ToolTip": "C:\\Users\\Cleveland\\Desktop\\Chillenium\\InPlainSightGame\\Scripts\\RandomEvent.cs",
               "RelativeToolTip": "Scripts\\RandomEvent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-08T17:28:09.695Z",
               "EditorCaption": ""
