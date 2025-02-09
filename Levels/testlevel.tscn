@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://dnhjj4kem8w1k"]
+[gd_scene load_steps=12 format=3 uid="uid://dnhjj4kem8w1k"]
 
 [ext_resource type="PackedScene" uid="uid://5brgudk8bkjp" path="res://Scenes/Player.tscn" id="1_uqva4"]
-[ext_resource type="PackedScene" uid="uid://bvvcf6863e4tt" path="res://Scenes/Enemy.tscn" id="2_bi7hl"]
+[ext_resource type="PackedScene" uid="uid://bvvcf6863e4tt" path="res://Scenes/Enemies/Enemy.tscn" id="2_bi7hl"]
 [ext_resource type="AudioStream" uid="uid://cwppl1u117ava" path="res://Music/SneakyTypeBeat.mp3" id="3_2tcmw"]
 [ext_resource type="PackedScene" uid="uid://dqfjuwly4kh6h" path="res://Scenes/HidingSpot.tscn" id="3_n7ajd"]
+[ext_resource type="Texture2D" uid="uid://d2dal0bqr6q7b" path="res://Images/bg1.png" id="4_ckpw0"]
 [ext_resource type="PackedScene" uid="uid://l1wh1f8y0kps" path="res://Scenes/randomEvent.tscn" id="4_l414e"]
 [ext_resource type="PackedScene" uid="uid://4fgptvu8y3nh" path="res://Scenes/GlobalEnemy.tscn" id="4_mww1b"]
 [ext_resource type="Script" path="res://Scripts/LeftWall.cs" id="7_ewscy"]
@@ -30,6 +31,12 @@ position = Vector2(70, 45)
 stream = ExtResource("3_2tcmw")
 autoplay = true
 
+[node name="Sprite2D2" type="Sprite2D" parent="Player"]
+z_index = -2
+position = Vector2(3.50002, -5.49994)
+scale = Vector2(0.143875, 0.147778)
+texture = ExtResource("4_ckpw0")
+
 [node name="Enemy" parent="." instance=ExtResource("2_bi7hl")]
 position = Vector2(525, 62)
 moveSpeed = -40.0
@@ -50,6 +57,9 @@ position = Vector2(-113, 65)
 [node name="LeftWall" type="RigidBody2D" parent="."]
 collision_layer = 3
 collision_mask = 3
+gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 2
 script = ExtResource("7_ewscy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
@@ -61,3 +71,47 @@ shape = SubResource("RectangleShape2D_q5vvj")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WinArea"]
 position = Vector2(7513, 112)
 shape = SubResource("RectangleShape2D_l1r1f")
+
+[node name="Enemy2" parent="." instance=ExtResource("2_bi7hl")]
+position = Vector2(910, 5)
+
+[node name="Enemy3" parent="." instance=ExtResource("2_bi7hl")]
+position = Vector2(1222, 8)
+
+[node name="Enemy4" parent="." instance=ExtResource("2_bi7hl")]
+position = Vector2(1307, 8)
+
+[node name="Enemy5" parent="." instance=ExtResource("2_bi7hl")]
+position = Vector2(1761, 8)
+
+[node name="Enemy6" parent="." instance=ExtResource("2_bi7hl")]
+position = Vector2(1836, 11)
+
+[node name="Enemy7" parent="." instance=ExtResource("2_bi7hl")]
+position = Vector2(2215, 11)
+
+[node name="Enemy8" parent="." instance=ExtResource("2_bi7hl")]
+position = Vector2(2714, 5)
+
+[node name="Enemy9" parent="." instance=ExtResource("2_bi7hl")]
+position = Vector2(3307, 8)
+
+[node name="Enemy10" parent="." instance=ExtResource("2_bi7hl")]
+position = Vector2(3908, 5)
+
+[node name="Enemy11" parent="." instance=ExtResource("2_bi7hl")]
+position = Vector2(4313, -3)
+
+[node name="Enemy12" parent="." instance=ExtResource("2_bi7hl")]
+position = Vector2(4773, 5)
+
+[node name="Enemy13" parent="." instance=ExtResource("2_bi7hl")]
+position = Vector2(4901, 0)
+
+[node name="Enemy14" parent="." instance=ExtResource("2_bi7hl")]
+position = Vector2(5429, 5)
+
+[node name="Enemy15" parent="." instance=ExtResource("2_bi7hl")]
+position = Vector2(6001, 5)
+
+[connection signal="body_entered" from="LeftWall" to="LeftWall" method="_on_body_entered"]
