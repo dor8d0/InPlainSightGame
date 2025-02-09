@@ -12,11 +12,11 @@ script = ExtResource("1_5johr")
 position = Vector2(-3.5, 0.5)
 shape = SubResource("RectangleShape2D_01tlb")
 
-[node name="Idle" type="AnimatedSprite2D" parent="."]
+[node name="Idle" type="Sprite2D" parent="."]
 
-[node name="AwaitingHide" type="AnimatedSprite2D" parent="."]
+[node name="AwaitingHide" type="Sprite2D" parent="."]
 
-[node name="Hiding" type="AnimatedSprite2D" parent="."]
+[node name="Hiding" type="Sprite2D" parent="."]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
