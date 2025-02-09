@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dnhjj4kem8w1k"]
+[gd_scene load_steps=11 format=3 uid="uid://dnhjj4kem8w1k"]
 
 [ext_resource type="PackedScene" uid="uid://5brgudk8bkjp" path="res://Scenes/Player.tscn" id="1_uqva4"]
 [ext_resource type="PackedScene" uid="uid://bvvcf6863e4tt" path="res://Scenes/Enemy.tscn" id="2_bi7hl"]
@@ -6,9 +6,16 @@
 [ext_resource type="PackedScene" uid="uid://dqfjuwly4kh6h" path="res://Scenes/HidingSpot.tscn" id="3_n7ajd"]
 [ext_resource type="PackedScene" uid="uid://l1wh1f8y0kps" path="res://Scenes/randomEvent.tscn" id="4_l414e"]
 [ext_resource type="PackedScene" uid="uid://4fgptvu8y3nh" path="res://Scenes/GlobalEnemy.tscn" id="4_mww1b"]
+[ext_resource type="Script" path="res://Scripts/LeftWall.cs" id="7_ewscy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_se1ht"]
-size = Vector2(634, 73.5)
+size = Vector2(7505, 73.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q5vvj"]
+size = Vector2(86, 258)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l1r1f"]
+size = Vector2(90, 184)
 
 [node name="Testlevel" type="Node2D"]
 
@@ -31,7 +38,7 @@ moveSpeed = -40.0
 collision_layer = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(312, 168)
+position = Vector2(3747.5, 168)
 shape = SubResource("RectangleShape2D_se1ht")
 
 [node name="HidingSpot" parent="." instance=ExtResource("3_n7ajd")]
@@ -39,3 +46,18 @@ position = Vector2(191, 100)
 
 [node name="RandomEvent" parent="." instance=ExtResource("4_l414e")]
 position = Vector2(-113, 65)
+
+[node name="LeftWall" type="RigidBody2D" parent="."]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("7_ewscy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+position = Vector2(-43, 86)
+shape = SubResource("RectangleShape2D_q5vvj")
+
+[node name="WinArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WinArea"]
+position = Vector2(7513, 112)
+shape = SubResource("RectangleShape2D_l1r1f")
