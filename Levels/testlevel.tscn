@@ -200,7 +200,7 @@ position = Vector2(5023, 11)
 position = Vector2(471, 96)
 
 [node name="Gold1" type="Sprite2D" parent="."]
-position = Vector2(7242, -83)
+position = Vector2(7269, -92)
 scale = Vector2(4.54762, 4.1938)
 texture = ExtResource("7_yne8u")
 

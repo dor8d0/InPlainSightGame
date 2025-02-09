@@ -17,6 +17,7 @@ public partial class DetectPlayer : Area2D
 	{
 		if (touchingPlayer && !player.isHiding){
 			GD.Print("player spotted");
+			GetTree().ChangeSceneToFile("res://game_over.tscn");
 		}
 	}
 	

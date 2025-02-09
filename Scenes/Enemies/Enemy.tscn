@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cyub34ryp6i2" path="res://Images/SecurityGaurdWalking2.png" id="4_slbaw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o37it"]
-size = Vector2(143, 133)
+size = Vector2(37, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iwoul"]
 animations = [{
@@ -35,7 +35,7 @@ position = Vector2(-75, -2)
 script = ExtResource("1_4rnxh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-60.5, 0.5)
+position = Vector2(69.5, 3)
 shape = SubResource("RectangleShape2D_o37it")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
