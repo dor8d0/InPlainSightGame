@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://bi7qdpbkeeuek"]
+
+[ext_resource type="Script" path="res://MainMenu.cs" id="1_3hfeb"]
+
+[node name="Main Menu" type="CanvasLayer"]
+script = ExtResource("1_3hfeb")
+
+[node name="Play button" type="Button" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 546.0
+offset_top = 268.0
+offset_right = -552.0
+offset_bottom = -349.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play"
+
+[node name="Exit button" type="Button" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 547.0
+offset_top = 342.0
+offset_right = -550.0
+offset_bottom = -275.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Exit"
+
+[connection signal="pressed" from="Play button" to="." method="OnPlayPressed"]
+[connection signal="pressed" from="Exit button" to="." method="OnExitPressed"]
