@@ -18,9 +18,11 @@ public partial class HidingSpot : Area2D
 		if(Input.IsActionJustPressed("Hide") && playerCanHide){
 			if(!player.isHiding){
 				player.isHiding = true;
+				player.Visible = false;
 			}
 			else{
 				player.isHiding = false;
+				player.Visible = true;
 			}
 		}
 	}

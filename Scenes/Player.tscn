@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://5brgudk8bkjp"]
 
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="1_uq5vx"]
-[ext_resource type="Texture2D" uid="uid://cnol3f0pyb303" path="res://icon.svg" id="2_1rjeo"]
+[ext_resource type="SpriteFrames" uid="uid://dfjpkl4qfgrql" path="res://SpriteFrames/PlayerFrames.tres" id="2_grsql"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m2xjw"]
 size = Vector2(121, 119)
@@ -14,5 +14,7 @@ script = ExtResource("1_uq5vx")
 position = Vector2(3.5, 2.5)
 shape = SubResource("RectangleShape2D_m2xjw")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_1rjeo")
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_grsql")
+animation = &"idle"
+autoplay = "idle"
